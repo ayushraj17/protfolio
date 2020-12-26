@@ -1,0 +1,15 @@
+@charset "utf-8";
+$text-color: #213e3b;
+
+// If need, change your variables before importing Bulma
+// $title-color: #ff0000;
+$navbar-burger-color: rgba(0, 0, 0, 0.7);
+$primary: #41aea9;
+
+$navbar-background-color: #fff;
+$navbar-item-color: #213e3b;
+$navbar-item-hover-background-color: #fff;
+// $button-background-color: #a6f6f1;
+// $button-text-color: #213e3b;
+
+@import "~bulma/bulma.sass";

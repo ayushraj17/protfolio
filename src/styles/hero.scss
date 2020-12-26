@@ -1,0 +1,18 @@
+.hero-body {
+	background-color: gray;
+	background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80");
+	// background-image: linear-gradient(to bottom right, #41aea9, #a6f6f1),
+	// 	url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80");
+	height: auto; /* You must set a specified height */
+	background-position: bottom; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+
+	background-blend-mode: multiply;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+	.hero-body {
+		height: 100vh; /* You must set a specified height */
+	}
+}

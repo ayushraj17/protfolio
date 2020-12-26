@@ -1,0 +1,54 @@
+@import "../../styles//global.scss";
+
+.jobButton {
+	color: $text-color;
+	background: transparent;
+	border: none;
+	font-family: monospace;
+	font-weight: 900;
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+	padding-left: 2rem;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	display: block;
+	margin: 0 1rem;
+	margin-bottom: 1rem;
+	//move to different class
+	&:hover {
+		box-shadow: -4px 0px $third;
+	}
+}
+.active {
+	box-shadow: -4px 0px $third;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) {
+	.jobButton {
+		display: inline;
+		padding-left: 0rem;
+		padding-bottom: 0.5rem;
+		&:hover {
+			box-shadow: 0px 4px $third;
+		}
+	}
+
+	.active {
+		box-shadow: 0px 4px $third;
+	}
+}
+
+.jobDesc {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	column-gap: 2rem;
+	align-items: center;
+	margin-bottom: 1.25rem;
+	p {
+		color: $text-color;
+	}
+}
+
+.reactIcons {
+	color: $third;
+	vertical-align: middle;
+}
