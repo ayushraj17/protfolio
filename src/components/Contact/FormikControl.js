@@ -1,6 +1,6 @@
 import React from "react";
 import Input from "./Input";
-import Textarea from "./Textarea";
+import Textarea from "./TextArea";
 
 function FormikControl(props) {
 	const { control, ...rest } = props;
