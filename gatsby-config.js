@@ -39,29 +39,30 @@ module.exports = {
 		},
 		{
 			// gatsby-plugin-prefetch-google-fonts
-
 			resolve: `gatsby-plugin-webfonts`,
 			options: {
-				fonts: [
-					{
-						family: `IBM Plex Sans`,
-						variants: [`700`],
-					},
-					{
-						family: `Poppins`,
-						variants: [
-							`100`,
-							`200`,
-							`300`,
-							`400`,
-							`500`,
-							`600`,
-							`700`,
-							`800`,
-							`900`,
-						],
-					},
-				],
+				font: {
+					google: [
+						{
+							family: `IBM Plex Sans`,
+							variants: [`700`],
+						},
+						{
+							family: `Poppins`,
+							variants: [
+								`100`,
+								`200`,
+								`300`,
+								`400`,
+								`500`,
+								`600`,
+								`700`,
+								`800`,
+								`900`,
+							],
+						},
+					],
+				},
 			},
 		},
 		{
