@@ -53,7 +53,6 @@ const About = () => {
 					</div>
 					<div className="column is-half is-hidden-mobile">
 						<Image fluid={image.childImageSharp.fluid} />
-						{/* <img src={publicURL} /> */}
 					</div>
 				</div>
 			</div>
