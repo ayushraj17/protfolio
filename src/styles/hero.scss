@@ -16,3 +16,7 @@
 		height: 100vh; /* You must set a specified height */
 	}
 }
+
+.container > h1 h2 {
+	transition: all 1s ease-in-out;
+}

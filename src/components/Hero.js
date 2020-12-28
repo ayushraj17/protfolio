@@ -36,12 +36,17 @@
 // export default Hero;
 
 import { Link } from "gatsby";
-import ParticlesBg from "particles-bg";
+// import ParticlesBg from "particles-bg";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaBriefcase } from "react-icons/fa";
 import Dev from "../assests/dev.inline.svg";
 const Hero = () => {
+	let ParticlesBg = "";
+	useEffect(() => {
+		const isBrowser = typeof window !== "undefined";
+		ParticlesBg = isBrowser ? require("particles-bg") : undefined;
+	}, []);
 	return (
 		<section className="section" id="about">
 			<div className="container">
@@ -76,7 +81,7 @@ const Hero = () => {
 					</div>
 				</div>
 			</div>
-			<ParticlesBg type="polygon" bg={true} num={2} />
+			{ParticlesBg && <ParticlesBg type="polygon" bg={true} num={2} />}
 		</section>
 	);
 };
